@@ -2,6 +2,5 @@
 
 ## Temas:
 
-[Primeras Clases](https://github.com/Linkinshura/LaboratorioAlgoritmos
+[Primeras Clases](PrimerosPasos)
 
-[Tema 1](PrimerosPasos)
