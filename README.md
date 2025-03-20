@@ -1,4 +1,7 @@
 # Laboratorio Algoritmos
 
 ## Temas:
-[Tema 1](https://github.com/Linkinshura/LaboratorioAlgoritmos)
+
+[Primeras Clases](https://github.com/Linkinshura/LaboratorioAlgoritmos
+
+[Tema 1](PrimerosPasos)
