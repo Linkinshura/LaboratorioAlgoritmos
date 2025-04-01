@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define imp 0.2
+#define imp 0.8
 
 float sala_ne, sala_bru, cant_h, sala_h;
 
