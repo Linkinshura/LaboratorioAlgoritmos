@@ -35,7 +35,7 @@ main () {
 	
 	scanf("%d", &opcion);
 	
-// procesos deoendiendo opcion
+// procesos dependiendo opcion
 	if( opcion == 1) {
 		printf("La suma de %f y %f es %f", num1, num2, suma);
 	} else if (opcion == 2) {
