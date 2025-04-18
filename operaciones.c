@@ -1,11 +1,11 @@
 #include <stdio.h>
-
+// declaracion de variables 
 float num1, num2, suma, resta, multiplicacion, division;
 
 int opcion;
 
 main () {
-	
+// ingresar numero 1 y 2	
 	printf("Ingresar el primer numero:");
 	scanf("%f", &num1);
 	
@@ -21,7 +21,7 @@ main () {
 	division = num1 / num2;
 	
 	
-	
+	// opciones
 	
 	printf("Ingrese la opcion a elegir: \n");
 	
@@ -35,6 +35,7 @@ main () {
 	
 	scanf("%d", &opcion);
 	
+// procesos deoendiendo opcion
 	if( opcion == 1) {
 		printf("La suma de %f y %f es %f", num1, num2, suma);
 	} else if (opcion == 2) {
