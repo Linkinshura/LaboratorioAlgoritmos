@@ -3,7 +3,7 @@
 ## Sentencias:
 - If/else/if else:
 
-<div>
+<&div>
 
 if (edad < 18){
 printf("usted es menor de edad");
@@ -15,5 +15,5 @@ else{
 printf("Usted es un adulto listo para trabajar legalmente");
 }
 
-</div>
+</&div>
 
