@@ -3,22 +3,21 @@
 ## Sentencias:
 - If/else/if else:
 
-{
+if (condicion) {
 
-if (edad < 18){
-
-printf("usted es menor de edad");
+codigo 
 
 }
 
-if else (edad > 65){
+if else (condicion){
 
-printf("Usted ya se jubilo");
+codigo
 
 }
 
-else{
+else {
 
-printf("Usted es un adulto listo para trabajar legalmente");
+codigo
 
-}  
+}
+
