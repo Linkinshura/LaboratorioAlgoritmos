@@ -15,16 +15,29 @@
 4. Multiplicacion
 
 switch(opcion){
+
 case 1:
+
 //Suma
+
 break;
+
 case 2:
+
 //Resta
+
 break;
+
 case 3:
+
 //Division
+
 break;
+
 case 4:
+
 //Multiplicacion
+
 break;
+
 }
