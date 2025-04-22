@@ -7,11 +7,17 @@ main () {
 printf("Ingrese el numero a evaluar:");
 scanf("%f", &num);
 
+
 if (num < 0) {
-	printf("El numero es negativo \n %f", num);
+	printf("Es negativo \n numero: %f", num);
 }
- else {
- 	printf("El numero es positivo \n %f", num);
- }
- 
+
+else if (num == 0) {
+		printf("Es nulo \n numero: %f", num);
+}
+
+else {
+		printf("Es positivo \n numero: %f", num);
+}
+
 }
