@@ -13,7 +13,7 @@ Mostrar el descuento realizado y el total a pagar
 #define desc3 0.95
 #define desc4 0
 
-float monto, total;
+float monto, total, des;
 
 
 main () {
@@ -23,20 +23,25 @@ main () {
 	
 	if ( monto > 50000) {
 		total = monto * desc1;
-		printf("El monto total es: %f \n y el descuento es del 15%%", total);
+		des = monto - total;
+		printf("El monto total es: %f \n  el descuento es del 15%% \n se le desconto: %f", total, des);
+		
 	}
 	else if (monto > 25000) {
 		total = monto * desc2;
-		printf("El monto total es: %f \n y el descuento es del 10%%", total);
+		des = monto - total;
+		printf("El monto total es: %f \n  el descuento es del 10%% \n se le desconto: %f", total, des);
 	}
 	else if (monto > 10000) {
 		total = monto * desc3;
-		printf("El monto total es: %f \n y el descuento es del 5%%", total);
+		des = monto - total;
+		printf("El monto total es: %f \n  el descuento es del 5%% \n se le desconto: %f", total, des);
 	}
 	
 	else {
 		total = monto;
-		printf("El monto total es: %f \n y no posee descuento", total);
+		des = monto - total;
+		printf("El monto total es: %f \n  no posee descuento por lo que se le desconta: %f", total, des);
 	}
 
 }
