@@ -21,5 +21,5 @@ printf("el total a pagar es: %f", total);
 else {
 total = monto * desc2;
 printf("el total a pagar es: %f", total);
-      ñ}
+     }
 }
