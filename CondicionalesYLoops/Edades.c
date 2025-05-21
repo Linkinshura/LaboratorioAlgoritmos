@@ -10,7 +10,7 @@ float prom;
 int i = 0;
 int n = 10;
 
-int contM = 0;
+float contM = 0;
 
 int acum = 0;
 
@@ -27,14 +27,16 @@ main () {
 			edadM = edad;
 		}
 		
-		if (edad > 17) {
+		if (edad < 18) {
 			contM++;
 		}
 	
 	}
 	
-	prom = acum / 10;
+	prom = acum / n;
 	
-	printf("El promedio de edad es: %f \n La cantidad de mayores de edad es: %d \n La edad mayor es: %d", prom, contM, edadM);
+	contM = (contM * 100) / n;
+	
+	printf("El promedio de edad es: %f \n El porcentaje de menores de edad es: %f  \n La edad mayor es: %d", prom, contM, edadM);
 	
 }
