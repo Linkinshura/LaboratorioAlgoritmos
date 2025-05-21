@@ -1,0 +1,40 @@
+/*
+Realizar un programa que lea 10 edades y muestre el promedio entre todas las edades, el porcentaje de menores de edad y la edad maxima
+*/
+
+
+#include <stdio.h>
+
+int edad, edadM;
+float prom;
+int i = 0;
+int n = 10;
+
+int contM = 0;
+
+int acum = 0;
+
+main () {
+	
+	for (i = 0; i < n; i++) {
+		
+		printf("Ingrese la edad correspondiente:");
+		scanf("%d", &edad);
+		
+		acum = acum + edad;
+		
+		while (edad > edadM) {
+			edadM = edad;
+		}
+		
+		if (edad > 17) {
+			contM++;
+		}
+	
+	}
+	
+	prom = acum / 10;
+	
+	printf("El promedio de edad es: %f \n La cantidad de mayores de edad es: %d \n La edad mayor es: %d", prom, contM, edadM);
+	
+}
