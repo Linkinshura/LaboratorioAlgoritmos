@@ -12,34 +12,6 @@ informar:
 */
 
 /*
-#include <stdio.>
-
-float edad_Min, Prom_G;
-int i, n=5;ñ, edad_Min, edad, cant_MdP, destino;
-main(){
-
-for (i=0; i<n;i++){
-// Ingresar edad
-printf("Ingresar la edad:");
-scanf("%d", &edad);
-
-// Destinos
-printf("\n 1 Pinamar \n 2 Villa Gessel \n 3 Mar del Plata \n Eliga su destino);
-scanf("%d", &destino);
-
-// condiciones
-if (edad < 18){
-
-
-
-
-
-
-}
-
-
-*/
-
 #include <stdio.h>
 int edad, destino;
     int contMayores = 0;
@@ -51,8 +23,8 @@ int edad, destino;
     int n = 5;
 
 main() {
-    
-    for (int i = 0; i < n; i++) {
+    int i = 0;
+    for (i; i < n; i++) {
         printf("\nPasajero %d\n", i + 1);
         printf("Ingrese la edad: ");
         scanf("%d", &edad);
@@ -93,7 +65,7 @@ main() {
         printf("No hubo pasajeros que fueran a Villa Gessel.\n");
     }
 
-    printf("Edad mínima registrada: %d años, destino: ", edadMinima);
+    printf("Edad minima registrada: %d , destino: ", edadMinima);
 
     
     if (destinoEdadMinima == 1) {
