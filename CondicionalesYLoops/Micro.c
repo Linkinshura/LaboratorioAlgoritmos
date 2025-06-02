@@ -11,7 +11,6 @@ informar:
 4 edad minima y su destino 
 */
 
-/*
 #include <stdio.h>
 int edad, destino;
     int contMayores = 0;
