@@ -3,14 +3,14 @@
  1 Porcentaje de mayores de edad
  2 Promedio de ingresos por persona
  3 Edad maxima y sus ingresos
- 4 Entre los mayores de 30 años, que porcentaje tiene un ingreso superior a 500000 pesos
+ 4 Entre los mayores de 30 aÃ±os, que porcentaje tiene un ingreso superior a 500000 pesos
  */
  
  #include <stdio.h>
  
  float ingresos, prom_ingr, porc_may, porc_may_500, ingr_max, acum, cant_may;
  
- int i=0, n=2, edad, edad_max, cant_may_30, cant_may_500;
+ int i=0, n=10, edad, edad_max, cant_may_30, cant_may_500;
  
  main(){
  	for(i; i<n; i++){
