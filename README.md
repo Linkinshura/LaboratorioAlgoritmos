@@ -14,3 +14,7 @@ Evaluación 15/04 Teoria y practica
 Evaluacion 07/05 If / else if / else
 
 Evaluacion  24/06 For
+
+## Unidad 3: Vectores
+
+Evaluacion: 27/08
