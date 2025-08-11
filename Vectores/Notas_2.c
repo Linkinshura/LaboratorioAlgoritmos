@@ -3,6 +3,9 @@ Se leen 4 notas de un alumno, mostrar:
 Porcentaje de aprobadas
 Nota minima y que numero de nota fue
 Promedio entre las notas desaprobadas
+Calcular el maximo y su posicion de memoria
+Promedio de valores menores o iguales a 10
+Mostrar las posiciones de memoria de los valores menores al promedio
 */
 
 #include<stdio.h>
@@ -46,3 +49,4 @@ main(){
 	printf("El porcentaje de aprobados es: %f porciento \n", porc_apr);
 		
 }
+
