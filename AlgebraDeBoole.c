@@ -26,6 +26,9 @@ Leyes DeMorgan: Al hacer el complemento de una operacion entera, la compuerta ta
 */
 #include <stdio.h>
 
+
+// Teoremas De Algebra de Boole
+
 int Teo1(int a){
 	printf("El complemento de %d \t es %d", a, (a -a));
 }
@@ -65,7 +68,7 @@ int DeMorgan1(int a, int b){
 
 
 
-
+// Funcion Menu
 
 int main(){
 	int a, b, c;
@@ -124,4 +127,5 @@ else{
 	
 	return 0;
 }
+
 
