@@ -51,7 +51,7 @@ int Teo6(int a, int b){
 }
 
 int Teo7(int a, int b){
-	printf("Para cada par de elementos se verifica que:  \n %d + %d' * %d = %d \n %d * (%d' + %d) = %d * %d", a, (a - a), b, a, b, a, (a - a), b, a, b);
+	printf("Para cada par de elementos se verifica que:  \n %d + %d' * %d = %d + %d \n %d * (%d' + %d) = %d * %d", a, (a - a), b, a, b, a, (a - a), b, a, b);
 }
 
 int Teo8(int a, int b, int c){
@@ -124,3 +124,4 @@ else{
 	
 	return 0;
 }
+
