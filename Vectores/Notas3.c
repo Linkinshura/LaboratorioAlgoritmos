@@ -9,30 +9,33 @@ Realizar un programa que procese 4 notas de un alumno e indique:
 #include <stdio.h>
 
 int i=0, n=4;
-float notas[4], prom_des, cant_des, acum_des, porc_apr, cant_apr, nota_min, i_min, nota_max, i_max;
+float nota, prom_des, cant_des, acum_des, porc_apr, cant_apr, nota_min, i_min, nota_max, i_max;
 
 main(){
-	for(i=0;i<n;i++){
+	do{
 		printf("Ingrese la nota numero %d:", i + 1);
-		scanf("%f", &notas[i]);
+		scanf("%f", &nota);
 		printf("\n");
-		if(notas[i] >= 6){
+		if(nota >= 6){
 			cant_apr++;
-			if(notas[i] < nota_min || i == 0){
-				nota_min=notas[i];
-				i_min=i;
+			if(nota < nota_min || i == 0){
+				nota_min=nota;
+				i_min=i+1;
 			}
-			if(notas[i] > nota_max || i == 0){
-				nota_max = notas[i];
-				i_max=i;
+			if(nota > nota_max || i == 0){
+				nota_max = nota;
+				i_max=i+1;
 			}
 		}
 		
-		if(notas[i] < 6){
+		if(nota < 6){
 			cant_des++;
-			acum_des+=notas[i];
+			acum_des+=nota;
 		}
-	}
+		i++;
+	} while(i<n);
+	
+	
 	
 	
 	prom_des = acum_des / cant_des;
@@ -41,6 +44,6 @@ main(){
 	
 	printf("El porcentaje de aprobados es: %f porciento \n", porc_apr);
 	printf("El promedio entre desaprobados es: %f \n", prom_des);
-	printf("La nota maxima es: %f  \t y su posicion es: %f \n", nota_max, i_max);
-	printf("La nota minima entre los aprobados es: %f  \t y su posicion es: %f \n", nota_min, i_min);
+	printf("La nota maxima es: %f  \n y es la nota numero: %f \n", nota_max, i_max);
+	printf("La nota minima entre los aprobados es: %f  \n y es la nota numero: %f \n", nota_min, i_min);
 }
