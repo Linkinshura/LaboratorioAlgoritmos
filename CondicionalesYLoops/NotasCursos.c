@@ -18,6 +18,9 @@ main(){
 		scanf("%f", &curso);
 		
 		printf("\n");
+		if (curso > 2 || curso < 0){
+			printf("Numero Equivocado");
+		}
 		if (curso != 0){
 		
 		printf("Ingrese su edad: \n");
@@ -63,4 +66,3 @@ if (curso == 1){
 	printf("3. La nota promedio entre menores de edad es: %f", prom_n18);
 	
 }
-
