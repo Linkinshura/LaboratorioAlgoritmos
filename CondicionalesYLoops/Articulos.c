@@ -8,7 +8,7 @@ float articulo, total, precio, cantidad;
 
 main(){
 	do{
-		printf("¿Desea ingresar un articulo?");
+		printf("Â¿Desea ingresar un articulo? (1.Si 2.No)");
 		scanf("%f", &articulo);
 		
 		printf("\n");
@@ -25,7 +25,8 @@ main(){
 		printf("\n");
 		
 		total += precio * cantidad;
-	} while(articulo != 0);
+	} while(articulo == 1);
 
 printf("El total es: %f", total);
 }
+
