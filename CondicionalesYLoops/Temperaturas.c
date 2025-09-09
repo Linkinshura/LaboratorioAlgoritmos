@@ -53,7 +53,7 @@ main(){
 	
 	prom_16 = acum_16 / cant_16;
 	prom_12 = acum_12 / cant_12;
-	porc_12 = (cant_12 / i) * 100;
+	porc_12 = (cant_12 / (i - 1)) * 100;
 	
 	printf("El promedio de temperaturas a partir de las 16 horas es: %f \n El maximo de estas temperaturas es: %d \n", prom_16, temp_16_max);
 	
