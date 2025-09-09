@@ -34,7 +34,7 @@ main(){
 			hora_min = hora;
 		}
 		
-		if( hora > 1559){
+		if( hora > 1600){
 			cant_16++;
 			acum_16+= temp;
 			if (temp > temp_16_max || i == 0){
@@ -42,7 +42,7 @@ main(){
 			}
 		}
 		
-		if(hora < 1201){
+		if(hora < 1200){
 			cant_12++;
 			acum_12+= temp;
 		}
@@ -60,3 +60,4 @@ main(){
 	printf("El porcentaje de temperaturas ingresadas hasta el mediodia es: %2f porciento y su promedio es: %f", prom_12, porc_12);
 	
 }
+
