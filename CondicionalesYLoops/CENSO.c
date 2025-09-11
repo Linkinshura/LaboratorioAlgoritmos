@@ -9,7 +9,7 @@ Realizar un programa donde para procesar los datos de un CENSO, se leen los dato
 
 #include <stdio.h>
 
-int genero, edad, cant_masc, cant_fem, edad_min_m, edad_mayor, i=0, n=8, cant_m_50, cant_f_40, acum_total, acum_m, carga, cant_total;
+int genero, edad, cant_masc, cant_fem, edad_min_m, edad_mayor, i=0, n=8, cant_m_50, cant_f_40, acum_total, acum_m, carga, cant_total, cant_40, cant_50;
 
 float porc_masc, porc_fem, prom_total, prom_masc, porc_f_40, porc_m_50;
 
@@ -55,13 +55,13 @@ main(){
 			}
 			
 			if (edad > edad_mayor || i == 0){
-				edad_max = edad;
+				edad_mayor = edad;
 			}
 			
 			
 		
 		}
-		i++
+		i++;
 	} while(carga == 1 && i<n);
 	
 	porc_masc = (cant_masc / (i-1)) * 100;
@@ -69,24 +69,32 @@ main(){
 	
 	prom_total = acum_total / cant_total;
 	
-	prom_m = acum_m / cant_masc;
+	prom_masc = acum_m / cant_masc;
 	
 	porc_f_40 = (cant_f_40 / (i-1)) * 100;
 	
 	
-	porc_f_50 = (cant_m_50 / (i-1)) * 100;
+	porc_m_50 = (cant_m_50 / (i-1)) * 100;
 	
 	
 	printf("El porcentaje de masculinos es: %f porciento \n El porcentaje de femeninos es: %f", porc_masc, porc_fem);
 	
 	printf("\n");
 	
-	printf("El masculino con menor edad es: %d \n y el mayor entre todos es: %f \n", edad_min_m, edad_max);
+	printf("El masculino con menor edad es: %d \n y el mayor entre todos es: %f \n", edad_min_m, edad_mayor);
 	
 	printf("\n");
 	
+	printf("El promedio de edades ingresadas es: %f \n y el promedio de edades de los masculinos es: %f \n", prom_total, prom_masc);
 	
+	printf("\n");
 	
+	printf("El porcentaje de mujeres menores a 40 es: %f porciento \n", porc_f_40);
 	
+	printf("\n");
+	
+	printf("El porcentaje de masculinos mayores a 50 es: %f porciento \n", porc_m_50);
+	
+	printf("\n");
 	
 }
