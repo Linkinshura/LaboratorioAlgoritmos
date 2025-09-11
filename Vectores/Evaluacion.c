@@ -7,9 +7,9 @@ Curso: 4to 3ra Computacion Turno Noche
 Consigna:
 Hacer un programa donde se almacena en un vector el dinero que ahorra una persona a lo largo de 6 meses. La posicion de memoria corresponde al numero de mes. Mostrar:
 1. Numero de los meses en los que se ahorro mas que el promedio
-2. ¿Que mes el ahorro fue menor y cuanto se ahorro?
+2. Â¿Que mes el ahorro fue menor y cuanto se ahorro?
 3. Que porcentaje se ahorro cada mes
-4. ¿Cuantos meses el ahorro supero los 10000? Expresar en porcentaje
+4. Â¿Cuantos meses el ahorro supero los 10000? Expresar en porcentaje
 5. Los meses en los que el ahorro fue menor a un numero dado
 */
 
@@ -24,11 +24,6 @@ main(){
 		printf("Ingrese el ahorro del mes %d: \n", i + 1);
 		scanf("%f", &ahorro[i]);
 		
-		
-		printf("Ingrese el numero con el cual comparar:");
-		scanf("%f", &num);
-		
-		printf("\n");
 		
 		acum_total += ahorro[i];
 		
@@ -55,6 +50,13 @@ main(){
 	porc_5 = (ahorro[4] / n) * 100;
 	porc_6 = (ahorro[5] / n) * 100;
 	
+	
+		printf("Ingrese el numero con el cual comparar:");
+		scanf("%f", &num);
+		
+		printf("\n");
+		
+	
 	printf("El mes con menor ahorro es: %d y se ahorro %d \n", i_min, ahorro_min);
 	
 	printf("El porcentaje de meses que el ahorro supero 10000 fue %f porciento \n", porc_10);
@@ -77,4 +79,5 @@ main(){
 	printf("El quinto mes se ahorro el %f porciento \n", porc_5);
 	printf("El sexto mes se ahorro el %f porciento \n", porc_6);
 }
+
 
