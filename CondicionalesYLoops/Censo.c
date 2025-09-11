@@ -21,7 +21,7 @@ main(){
 		printf("\n");
 		
 		if (carga == 1){
-			printf("Ingrese su genero:");
+			printf("Ingrese su genero(1. Masculino 2. Femenino):");
 			scanf("%d", &genero);
 			
 			printf("\n");
