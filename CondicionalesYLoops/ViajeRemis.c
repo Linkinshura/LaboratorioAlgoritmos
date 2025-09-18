@@ -4,7 +4,7 @@ Realizar un programa que procese los viajes de un remis, se lee el monto del via
 2. Precio promedio de los viajes pagados con tarjeta
 3. Precio del viaje mas barato y porque medio se abono
 4. Precio promedio entre todos los viajes
-5. Dentro de los viajes con monto mayor a 10000, ¿que cantidad pago en efectivo? Expresar en porcentaje
+5. Dentro de los viajes con monto mayor a 10000, Â¿que cantidad pago en efectivo? Expresar en porcentaje
 */
 
 #include <stdio.h>
@@ -60,7 +60,12 @@ main(){
 	
 	printf("\n");
 	
-	printf("3. El viaje con monto mas barato costo: %f y su medio de pago fue: %d", monto_min, medio_min);
+	printf("3. El viaje con monto mas barato costo: %f y su medio de pago fue:", monto_min);
+	if (medio_min == 1){
+		printf("Efectivo");
+	} else if (medio_min == 2){
+		printf("Tarjeta");
+	}
 	
 	printf("\n");
 	
