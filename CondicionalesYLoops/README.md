@@ -7,6 +7,8 @@
 
 - While: Mientras se cumpla la condicion el codigo se ejecutara indefinidamente
 
+- Do While: Se ejecuta mientras se cumpla la condicion
+
 - Switch: se utiliza para hacer menus donde el valor de la variable que le das te lleva a diferentes casos, ejemplo
 
 1. Suma
