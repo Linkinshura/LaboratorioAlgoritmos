@@ -15,7 +15,7 @@ Evaluacion 07/05 If / else if / else
 
 Evaluacion  24/06 For
 
-Evaluacion 17)09 While/Do While
+Evaluacion 24/09 While/Do While
 
 ## Unidad 3: Vectores
 
