@@ -78,10 +78,11 @@ main (){
 	printf("El %f porciento de los viajes tuvieron 300 o mas pasajeros", porc_300);
 	printf("\n");
 	
+	printf("Diagonal Principal: \n");
 	for(i=0;i<n;i++){
 		printf("|");
 		for(j=0;j<n;j++){
-			printf("%d", diagonal[i][j]);
+			printf("%d ", diagonal[i][j]);
 		}
 		printf("|");
 		printf("\n");
